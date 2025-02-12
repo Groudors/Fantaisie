@@ -19,4 +19,8 @@ public abstract class EtreVivant {
 		this.bataille=bataille;
 		return "";
 	}
+	
+	public String mourir() {
+		return "";
+	}
 }

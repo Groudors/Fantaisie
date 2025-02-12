@@ -1,4 +1,5 @@
 package protagonistes;
+import affrontement.*;
 
 public class Homme extends EtreVivant{
 
@@ -11,5 +12,17 @@ public class Homme extends EtreVivant{
 		return (getNom() + " : " + texte + "\n");
 		
 	}
-
+	
+	@Override
+	public String rejointBataille(Bataille bataille) {
+		this.bataille=bataille;
+		return bataille.ajouter(this);
+		
+	}
+	@Override
+	public String mourir() {
+		String texte =bataille.eliminer(this);
+		return("C'est ainsi que le courageux " + getNom() + " mourut. \n" + texte);
+		
+	}
 }
