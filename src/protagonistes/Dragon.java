@@ -1,6 +1,8 @@
 package protagonistes;
 import affrontement.*;
 public class Dragon extends EtreVivant{
+	int nbBDF=10;
+	
 	public Dragon(String nom) {
 		super(nom);	
 		this.vie=200;
@@ -32,4 +34,22 @@ public class Dragon extends EtreVivant{
 		}
 		return chaine;
 	}
+	
+	public String cracheBouleFeu(Homme homme) {
+		String chaine="";
+		if (nbBDF==0){
+			return (getNom() + " a voulu attaquer "+ homme.getNom() + " , mais il n'avait plus de feu en lui.\n"
+					+ homme.getNom() + " a eu beaucoup de chance ! ");
+		}
+		else {
+			nbBDF-=1;
+			chaine=getNom() + " crache une boule de feu sur " + homme.getNom() + "! \n";
+			chaine+=homme.subirAttaque(100);
+			return chaine;
+		}
+		
+	}
+	
+	
+	
 }
