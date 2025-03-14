@@ -23,4 +23,6 @@ public abstract class EtreVivant {
 	public String mourir() {
 		return "";
 	}
+	
+	
 }

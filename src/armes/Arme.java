@@ -32,24 +32,15 @@ public class Arme {
 	}
 	
 	public String attaque(Dragon dragon) {
-		return (proprietaire.getNom()+ " attaque "+ dragon.getNom() + " avec son " + getNature());
+		String chaine="";
+		chaine+=(proprietaire.getNom()+ " attaque "+ dragon.getNom() + " avec son " + getNature() + ". \n");
+	
+		chaine +=dragon.subirAttaque(degats);
 		
-		
+		return chaine;
+	}
+	
+
 	}
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-}

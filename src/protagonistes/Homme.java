@@ -25,4 +25,18 @@ public class Homme extends EtreVivant{
 		return("C'est ainsi que le courageux " + getNom() + " mourut. \n" + texte);
 		
 	}
+	
+	public String subirAttaque(int forceAttaque) {
+		String chaine= getNom() + " subit une violente attaque, ";
+		this.vie-=forceAttaque;
+		if (vie>0) {
+			chaine+=(" mais il parvient à se relever \n");
+		}
+		else { 
+			chaine+=(" trop violente pour survivre \n");
+			chaine+=mourir();
+	
+		}
+		return chaine;
+	}
 }
