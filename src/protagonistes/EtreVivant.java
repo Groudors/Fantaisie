@@ -1,7 +1,7 @@
 package protagonistes;
 import affrontement.*;
 
-public abstract class EtreVivant {
+abstract public class EtreVivant {
 	protected String nom;
 	protected int vie;
 	protected Bataille bataille;
@@ -20,9 +20,7 @@ public abstract class EtreVivant {
 		return "";
 	}
 	
-	public String mourir() {
-		return "";
-	}
+	abstract public String mourir();
 	
 	
 }

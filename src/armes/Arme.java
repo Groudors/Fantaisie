@@ -1,7 +1,7 @@
 package armes;
 import protagonistes.*;
 
-public class Arme {
+abstract public class Arme {
 	private Homme proprietaire;
 	private String nature;
 	private int degats;

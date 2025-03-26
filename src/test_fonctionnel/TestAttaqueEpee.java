@@ -1,6 +1,7 @@
 package test_fonctionnel;
 
 import affrontement.Bataille;
+import armes.Arme;
 import armes.Epee;
 import protagonistes.Dragon;
 import protagonistes.Heros;
