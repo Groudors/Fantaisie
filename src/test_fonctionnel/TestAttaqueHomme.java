@@ -3,7 +3,7 @@ package test_fonctionnel;
 import affrontement.Bataille;
 import armes.Arc;
 import armes.Epee;
-import armes.Lancepierre;
+import armes.LancePierre;
 import protagonistes.Dragon;
 import protagonistes.Heros;
 import protagonistes.Homme;
@@ -17,7 +17,7 @@ public class TestAttaqueHomme {
 
 		Epee excalibur = new Epee("excalibur");
 		Arc arc = new Arc(1);
-		Lancepierre lancePierre = new Lancepierre();
+		LancePierre lancePierre = new LancePierre();
 
 		Bataille bataille = new Bataille();
 

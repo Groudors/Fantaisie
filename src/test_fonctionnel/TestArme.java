@@ -3,7 +3,7 @@ package test_fonctionnel;
 import affrontement.Bataille;
 import armes.Arc;
 import armes.Epee;
-import armes.Lancepierre;
+import armes.LancePierre;
 import protagonistes.Dragon;
 import protagonistes.Heros;
 import protagonistes.Homme;
@@ -17,7 +17,7 @@ public class TestArme {
 		System.out.print(homme.rejointBataille(bataille));
 		System.out.print(heros.rejointBataille(bataille));
 		System.out.print(dragon.rejointBataille(bataille));
-		Lancepierre lancePierre = new Lancepierre();
+		LancePierre lancePierre = new LancePierre();
 		Epee epee = new Epee("Excalibur");
 		Arc arc = new Arc(1);
 		System.out.println("Le lance-pierre a un propriétaire ? " + lancePierre.estPris());
