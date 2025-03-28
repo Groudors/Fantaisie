@@ -63,8 +63,8 @@ public class Homme extends EtreVivant{
 	public String prendre(Arme arme) {
 		String chaine="";
 		if (maPossession!=null) {
-			lacher();
 			chaine+= getNom() + " lache son " + maPossession.getNature() + ".\n";
+			lacher();
 		}
 		if (arme.estPris()) {
 			chaine+= parler(arme.getProprietaire().getNom() + " peux tu me laisser ton "+ arme.getNature() + " ?");
